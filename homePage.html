@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homePage.css">
+</head>
+<body>
+
+  
+     <div class="topContainer">
+        <div id="dashboardStatus">
+             <h3>Home</h3>
+        </div>
+        <div>
+             <!-- <input type="text">
+             <button>Sign Out</button> -->
+       </div>
+    </div>
+    <!-- end search and status page -->
+
+    
+    <!-- Start info Page -->
+    <div class="containerInfo">
+        <!-- Gwa Info -->
+         <div class="gwaTotalContainer">
+            <div class="gwaTotal">
+                <h1 id="studentGwaId">1.57<span id="periodId">Prelim</span></h1>
+                <h4>Total GWA</h4>
+                <h6 id="gwaStatusId">+0.4 last month</h6>
+            </div>
+            
+            <img src="" alt="icon" width="80" height="80">
+         </div>
+        <!-- events and report Info -->
+         <div class="eventAndReportContainer"> 
+            <div class="eventsAndReportTotal">
+                <h1 id="studentEventsAndReportId">10<span id="semPeriodId">1st sem</span></h1>
+             
+                <h4>Total Events</h4>
+                <h6 id="eventAndReportStatusId">+2 last month</h6>
+            </div>
+            
+            <img src="" alt="icon" width="80" height="80">
+         </div>
+        <!-- Gwa Info percent -->
+         <div class="gwaPercentageContainer">
+            
+                <div class="circle">
+                    <div class="circle-percentage" id="eventPercentage">70%</div>
+                </div>
+
+
+            <h3>Grade Status <span><h4>Total Grade Percentage</h4></span></h3>
+       
+         </div>
+        <!-- events and report Info percent-->
+         <div class="eventAndReportPercentageContainer">
+            <div class="circle">
+                <div class="circle-percentage" id="totalEventPercentage">50%</div>
+            </div>
+            <h3>Event/Report Status <span><h4>Event and Report Completed</h4></span></h3>
+         </div>
+    </div>
+    <!-- end info page -->
+
+    <!-- Start schedule, events and grade by subject -->
+   <div class="student_schedule_event_gradeStatues_container">
+       <!-- Student schedule Container -->
+        <div class="schedule_Container">
+         <h2>Student Schedule <img src="" alt="img" srcset="" width="16" height="16"></h2> 
+         <div id="studentScheduleData">
+             <!-- example Table -->
+                    <table style="border: 1px solid black;">
+
+                        <!-- Title Column -->
+                        <thead>
+                            <tr>
+
+                                <th class="time-column">Time</th>
+                                <th class="day-column">Day</th>
+                                <th class="subject-column">Subject</th>
+                                <th class="teacher-column">Teacher</th>
+                                <th class="room-column">Room</th>
+                            
+                            </tr>
+                             
+                        </thead>
+
+                        <!-- Rows Data -->
+                         <tbody id="studentScheduleDataId">
+
+                        
+                            
+                         </tbody>
+                    </table>
+
+                    <!-- Button next If So many rows subject class -->
+                     <button id="nextButtonClassScheduleId" style="display:none;
+                     margin-top: 2px;
+                     margin-left: 40%;
+                     font-size: 10px;
+                     
+                     "
+                     
+                     >Next</button>
+                    
+
+                     
+         </div>
+            
+            
+        </div>
+
+        <!-- Student events and Grade Container -->
+        <div class="events_and_Grade_Container">
+             
+            <div class="event_and_nextClassContainer">
+                <div class="eventContainer">
+                    <h2>Events <img src="" alt="" width="24" height="24" style="display: inline;"></h2>
+                    <div class="studentEventTableId">
+                        <!-- example Table -->
+                        <table>
+
+                         <!-- Title Column -->
+                             <thead>
+                                 <tr>
+
+                                     <th class="time-column">Title</th>
+                                     <th class="day-column">Date</th>
+                                     
+                                 </tr>
+                             
+                             </thead>
+
+                          <!-- Rows Data -->
+                             <tbody id="studentEventDataId">
+                            
+                             </tbody>
+                         </table>
+
+                     </div>
+                
+                     
+                </div>
+
+                <div class="nextClassContainer">
+
+                    
+                        <h2>Next Class<img src="" alt="" width="24" height="24" style="display: inline;"></h2>
+                        <div class="nextClassContainerData">
+                     <!-- example Table -->
+                        <table>
+
+                         <!-- Title Column -->
+                             <thead>
+                                 <tr>
+
+                                     <th class="time-column">Subject</th>
+                                     <th class="day-column">Room</th>
+                                     
+                                 </tr>
+                             
+                             </thead>
+
+                          <!-- Rows Data -->
+                             <tbody id="studentNextClassDataId">
+                            
+                             </tbody>
+                         </table>
+
+                    </div>
+                </div>
+               
+              </div>
+
+              <div class="gradeBySubjectContainer">
+                <h2>Grade by subject<img src="" alt="" width="24" height="24" style="display: inline;"></h2>
+                      <div class="subjectStatusGrade">
+                         <div id="subjectStudentStatusDataId">
+                            
+                         </div>
+
+                     </div>
+              </div>
+          
+
+        </div>
+   </div>
+    <!-- End schedule, events and grade by subject -->
+
+ </div>
+<!--  johnmark From Argie machine-->
+
+ <script src="homePage.js"></script>
+</body>
+</html>
