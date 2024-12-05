@@ -484,7 +484,12 @@ document.querySelector('.content').addEventListener('contentAdded', (event) => {
 
 // Load content on window load
 window.onload = function () {
-    loadHTMLContent('homePage.html', '.content');
+    // loadHTMLContent('homePage.html', '.content');
+    loadHTMLContent('schedule.html', '.content');
     
 };
 
+// button click Schedule show data
+scheduleButton.addEventListener('click', ()=>{
+    loadHTMLContent('schedule.html', '.content');
+})
